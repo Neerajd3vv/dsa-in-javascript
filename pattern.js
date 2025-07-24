@@ -457,31 +457,31 @@
 //     1   3   3   1
 //   1   4   6   4   1
 
-function PrintPascalTriangle(n) {
-  const Array2dTriangle = [];
+// function PrintPascalTriangle(n) {
+//   const Array2dTriangle = [];
 
-  for (let i = 0; i < n; i++) {
-    Array2dTriangle[i] = []; // creting arrays for each iteration in out main array
+//   for (let i = 0; i < n; i++) {
+//     Array2dTriangle[i] = []; // creting arrays for each iteration in out main array
 
-    for (let j = 0; j <= i; j++) {
-      if (j === 0 || j === i) {
-        Array2dTriangle[i][j] = 1; // putting 1 to the edges of each element
-      } else {
-        Array2dTriangle[i][j] =
-          Array2dTriangle[i - 1][j - 1] + Array2dTriangle[i - 1][j]; // the middle value is the some of two values direct above row , so this the formula
-      }
-    }
-  }
+//     for (let j = 0; j <= i; j++) {
+//       if (j === 0 || j === i) {
+//         Array2dTriangle[i][j] = 1; // putting 1 to the edges of each element
+//       } else {
+//         Array2dTriangle[i][j] =
+//           Array2dTriangle[i - 1][j - 1] + Array2dTriangle[i - 1][j]; // the middle value is the some of two values direct above row , so this the formula
+//       }
+//     }
+//   }
 
-  // Loop to print the elements of the 2D array , As out required pattern
-  for (let k = 0; k < n; k++) {
-    let space = " ".repeat(n - k - 1); // .repeat -> It repeats the string n no. of times.
-    let pattern = Array2dTriangle[k].join(" "); // -> Joining so array -> converts to strings
-    console.log(space + pattern);
-  }
-}
+//   // Loop to print the elements of the 2D array , As out required pattern
+//   for (let k = 0; k < n; k++) {
+//     let space = " ".repeat(n - k - 1); // .repeat -> It repeats the string n no. of times.
+//     let pattern = Array2dTriangle[k].join(" "); // -> Joining so array -> converts to strings
+//     console.log(space + pattern);
+//   }
+// }
 
-PrintPascalTriangle(5);
+// PrintPascalTriangle(5);
 
 // +++++++++++++++++++++++++ PATTERN 17 +++++++++++++++++++++++++
 
@@ -498,46 +498,46 @@ PrintPascalTriangle(5);
 //     212
 //      1
 
-function filledKajuKatli(n) {
-  // upper part
+// function filledKajuKatli(n) {
+//   // upper part
 
-  for (let i = 1; i <= n; i++) {
-    let row = "";
-    row += " ".repeat(n - i);
+//   for (let i = 1; i <= n; i++) {
+//     let row = "";
+//     row += " ".repeat(n - i);
 
-    // Decrement // -> i to 1
-    for (let j = i; j >= 1; j--) {
-      row += j;
-    }
+//     // Decrement // -> i to 1
+//     for (let j = i; j >= 1; j--) {
+//       row += j;
+//     }
 
-    // Increment // -> 2 to i
-    for (let k = 2; k <= i; k++) {
-      row += k;
-    }
+//     // Increment // -> 2 to i
+//     for (let k = 2; k <= i; k++) {
+//       row += k;
+//     }
 
-    console.log(row);
-  }
+//     console.log(row);
+//   }
 
-  // lower part from n-1 to 1
+//   // lower part from n-1 to 1
 
-  for (let i = n - 1; i >= 1; i--) {
-    let row = "";
-    row += " ".repeat(n - i);
+//   for (let i = n - 1; i >= 1; i--) {
+//     let row = "";
+//     row += " ".repeat(n - i);
 
-    // Decrement // -> i to 1
-    for (let j = i; j >= 1; j--) {
-      row += j;
-    }
+//     // Decrement // -> i to 1
+//     for (let j = i; j >= 1; j--) {
+//       row += j;
+//     }
 
-    // Increment // -> 2 to i
-    for (let k = 2; k <= i; k++) {
-      row += k;
-    }
-    console.log(row);
-  }
-}
+//     // Increment // -> 2 to i
+//     for (let k = 2; k <= i; k++) {
+//       row += k;
+//     }
+//     console.log(row);
+//   }
+// }
 
-filledKajuKatli(4);
+// filledKajuKatli(4);
 
 // +++++++++++++++++++++++++ PATTERN 18 +++++++++++++++++++++++++
 
@@ -552,21 +552,21 @@ filledKajuKatli(4);
 //   ****  ****
 //   **********
 
-function kajuKatliMold(n) {
-  for (let i = 1; i <= n; i++) {
-    let stars = "*".repeat(n - i + 1);
-    let spaces = " ".repeat(2 * i - 2); // the pattern i notice is the gap is basically 2 table but one step forward so gotta remove -2
-    console.log(stars + spaces + stars);
-  }
+// function kajuKatliMold(n) {
+//   for (let i = 1; i <= n; i++) {
+//     let stars = "*".repeat(n - i + 1);
+//     let spaces = " ".repeat(2 * i - 2); // the pattern i notice is the gap is basically 2 table but one step forward so gotta remove -2
+//     console.log(stars + spaces + stars);
+//   }
 
-  for (let i = n; i > 0; i--) {
-    let stars = "*".repeat(n - i + 1);
-    let spaces = " ".repeat(2 * i - 2);
-    console.log(stars + spaces + stars);
-  }
-}
+//   for (let i = n; i > 0; i--) {
+//     let stars = "*".repeat(n - i + 1);
+//     let spaces = " ".repeat(2 * i - 2);
+//     console.log(stars + spaces + stars);
+//   }
+// }
 
-kajuKatliMold(5);
+// kajuKatliMold(5);
 
 // +++++++++++++++++++++++++ PATTERN 19 +++++++++++++++++++++++++
 
@@ -580,7 +580,187 @@ kajuKatliMold(5);
 //    **      **
 //    *        *
 
-function butterfly(n) {
+// function butterfly(n) {
+//   for (let i = n; i > 1; i--) {
+//     let star = "*".repeat(n - i + 1);
+//     let space = " ".repeat(2 * i - 2);
+//     console.log(star + space + star);
+//   }
+
+//   for (let i = 1; i <= n; i++) {
+//     let star = "*".repeat(n - i + 1);
+//     let space = " ".repeat(2 * i - 2);
+//     console.log(star + space + star);
+//   }
+// }
+
+// butterfly(5);
+
+// +++++++++++++++++++++++++ PATTERN 20 +++++++++++++++++++++++++ (Worth repeating)
+
+//    ****
+//    *  *
+//    *  *
+//    *  *
+//    ****
+
+// function standupRectangle(n) {
+//   for (let i = 1; i <= n; i++) {
+//     let row = "";
+
+//     for (let j = 0; j < n - 1; j++) {
+//       // this is better i was ealier handling the first and last case outside of this innner loop , via a conditional,  now we testing for that condition in the loop itself. i === 1 || i === n .
+//       if (i === 1 || i === n || (j === 0) | (j === n - 1 - 1)) {
+//         row += "*";
+//       } else {
+//         row += " ";
+//       }
+//     }
+//     console.log(row);
+//   }
+// }
+
+// standupRectangle(5);
+
+// +++++++++++++++++++++++++ PATTERN 21 +++++++++++++++++++++++++
+
+// Pattern -> A single number is getting increased for each iteration of innner loop
+
+//  1
+//  2  3
+//  4  5  6
+//  7  8  9  10
+//  11 12 13 14 15
+
+function printNumberTriangle(n) {
+  let num = 1;
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+      row += num;
+      row += " ";
+      num++;
+    }
+    console.log(row);
+  }
+}
+
+printNumberTriangle(5);
+
+// +++++++++++++++++++++++++ PATTERN 22 +++++++++++++++++++++++++ , Worthy retry
+
+// pattern -> (i + j ) % 2 if even then -> "1" else "0"
+
+//  1
+//  0 1
+//  1 0 1
+//  0 1 0 1
+//  1 0 1 0 1
+
+function binaryRightTriangle(n) {
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+
+    for (let j = 1; j <= i; j++) {
+      row += ((i + j) % 2 === 0 ? 1 : 0) + " ";
+    }
+
+    console.log(row);
+  }
+}
+
+binaryRightTriangle(5);
+
+// +++++++++++++++++++++++++ PATTERN 23 +++++++++++++++++++++++++
+
+// +++++++++++++++++++++++++ PATTERN 24 +++++++++++++++++++++++++
+
+// +++++++++++++++++++++++++ PATTERN 25 +++++++++++++++++++++++++
+
+// 1 1 1 1 1 1
+// 2 2 2 2 2
+// 3 3 3 3
+// 4 4 4
+// 5 5
+// 6
+
+let num = 1;
+for (let i = 6; i >= 1; i--) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    if (j === i) {
+      row += num;
+      num++;
+    } else {
+      row += num + " ";
+    }
+  }
+  console.log(row);
+}
+
+// +++++++++++++++++++++++++ PATTERN 26 +++++++++++++++++++++++++
+
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+//   * * * *
+//    * * *
+//     * *
+//      *
+
+function diamond(n) {
+  // upper
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+
+    for (let j = 1; j <= n - i; j++) {
+      row += " ";
+    }
+
+    for (let k = 1; k <= i; k++) {
+      row += "*";
+      if (k < i) {
+        row += " ";
+      }
+    }
+    console.log(row);
+  }
+
+  // lower
+  for (let i = n - 1; i >= 1; i--) {
+    let row = "";
+
+    for (let j = 1; j <= n - i; j++) {
+      row += " ";
+    }
+
+    for (let k = 1; k <= i; k++) {
+      row += "*";
+      if (k < i) {
+        row += " ";
+      }
+    }
+    console.log(row);
+  }
+}
+
+diamond(5);
+
+// +++++++++++++++++++++++++ PATTERN 27 +++++++++++++++++++++++++
+
+//  *        *
+//  **      **
+//  ***    ***
+//  ****  ****
+//  **********
+//  ****  ****
+//  ***    ***
+//  **      **
+//  *        *
+
+function starWarShip(n) {
   for (let i = n; i > 1; i--) {
     let star = "*".repeat(n - i + 1);
     let space = " ".repeat(2 * i - 2);
@@ -594,30 +774,33 @@ function butterfly(n) {
   }
 }
 
-butterfly(5);
+starWarShip(5);
 
-// +++++++++++++++++++++++++ PATTERN 20 +++++++++++++++++++++++++ (Worth repeating)
+// +++++++++++++++++++++++++ PATTERN 28 +++++++++++++++++++++++++
+//         1
+//       2 1 2
+//     3 2 1 2 3
+//   4 3 2 1 2 3 4
+// 5 4 3 2 1 2 3 4 5
 
-//    ****
-//    *  *
-//    *  *
-//    *  *
-//    ****
-
-function standupRectangle(n) {
+function numberPyramid(n) {
   for (let i = 1; i <= n; i++) {
     let row = "";
 
-    for (let j = 0; j < n - 1; j++) {
-      // this is better i was ealier handling the first and last case outside of this innner loop , via a conditional,  now we testing for that condition in the loop itself. i === 1 || i === n .
-      if (i === 1 || i === n || (j === 0) | (j === n - 1 - 1)) {
-        row += "*";
-      } else {
-        row += " ";
-      }
+    row += "  ".repeat(n - i);
+
+    // Left (descending part)
+    for (let j = i; j >= 1; j--) {
+      row += j + " ";
     }
+
+    // Right (ascending part)
+    for (let j = 2; j <= i; j++) {
+      row += j + " ";
+    }
+
     console.log(row);
   }
 }
 
-standupRectangle(5);
+numberPyramid(5);
