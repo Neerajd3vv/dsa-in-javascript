@@ -6,13 +6,14 @@
 // * * * * *
 // * * * * *
 
-// for (i = 1; i <= 5; i++) {
-//   let row = "";
-//   for (j = 1; j <= 5; j++) {
-//     row += "* ";
-//   }
-//   console.log(row);
-// }
+for (i = 1; i <= 5; i++) {
+  let row = "";
+  for (j = 1; j <= 5; j++) {
+    row += "* ";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 2 +++++++++++++++++++++++++
 
@@ -22,13 +23,14 @@
 // ****
 // *****
 
-// for (i = 1; i <= 5; i++) {
-//   let row = "";
-//   for (j = 0; j < i; j++) {
-//     row += "* ";
-//   }
-//   console.log(row);
-// }
+for (i = 1; i <= 5; i++) {
+  let row = "";
+  for (j = 0; j < i; j++) {
+    row += "* ";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 3 +++++++++++++++++++++++++
 
@@ -38,13 +40,14 @@
 // 1 2 3 4
 // 1 2 3 4 5
 
-// for (let index = 1; index <= 5; index++) {
-//   let row = "";
-//   for (j = 1; j <= index; j++) {
-//     row += `${j}`;
-//   }
-//   console.log(row);
-// }
+for (let index = 1; index <= 5; index++) {
+  let row = "";
+  for (j = 1; j <= index; j++) {
+    row += `${j}`;
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 4 +++++++++++++++++++++++++
 
@@ -66,13 +69,14 @@
 
 // then , i realised that count of starts going down , We should loop in the same pattern
 
-// for (let i = 5; i > 0; i--) {
-//   let row = "";
-//   for (let j = 0; j < i; j++) {
-//     row += "* ";
-//   }
-//   console.log(row);
-// }
+for (let i = 5; i > 0; i--) {
+  let row = "";
+  for (let j = 0; j < i; j++) {
+    row += "* ";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 5 +++++++++++++++++++++++++
 
@@ -104,14 +108,15 @@
 
 // Optimised one , Calculate the no of start up front
 
-// for (let i = 0; i < 9; i++) {
-//   let row = "";
-//   let stars = i < 5 ? i + 1 : 9 - i;
-//   for (let j = 0; j < stars; j++) {
-//     row += "* ";
-//   }
-//   console.log(row);
-// }
+for (let i = 0; i < 9; i++) {
+  let row = "";
+  let stars = i < 5 ? i + 1 : 9 - i;
+  for (let j = 0; j < stars; j++) {
+    row += "* ";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 6 +++++++++++++++++++++++++
 
@@ -121,16 +126,17 @@
 //  ****
 // *****
 
-// for (let i = 1; i <= 5; i++) {
-//   let row = "";
-//   for (let j = 1; j <= 5 - i; j++) {
-//     row += " ";
-//   }
-//   for (let k = 1; k <= i; k++) {
-//     row += "*";
-//   }
-//   console.log(row);
-// }
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= 5 - i; j++) {
+    row += " ";
+  }
+  for (let k = 1; k <= i; k++) {
+    row += "*";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 7 +++++++++++++++++++++++++
 
@@ -140,18 +146,19 @@
 //     **
 //      *
 
-// for (let i = 1; i <= 5; i++) {
-//   let row = "";
+for (let i = 1; i <= 5; i++) {
+  let row = "";
 
-//   for (let j = 1; j < i; j++) {
-//     row += " ";
-//   }
+  for (let j = 1; j < i; j++) {
+    row += " ";
+  }
 
-//   for (let k = 0; k <= 5 - i; k++) {
-//     row += "*";
-//   }
-//   console.log(row);
-// }
+  for (let k = 0; k <= 5 - i; k++) {
+    row += "*";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 8 +++++++++++++++++++++++++
 
@@ -161,16 +168,18 @@
 //  *******
 // *********
 
-// for (let i = 1; i <= 5; i++) {
-//   let row = "";
-//   for (let j = 1; j <= 5 - i; j++) {
-//     row += " ";
-//   }
-//   for (let p = 1; p <= 2 * i - 1; p++) {  // double the current index like 2 will become 4 and - 1 = 3 for second iteration , Now 3 star will get print, this is the pattern here.
-//     row += "*";
-//   }
-//   console.log(row);
-// }
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= 5 - i; j++) {
+    row += " ";
+  }
+  for (let p = 1; p <= 2 * i - 1; p++) {
+    // double the current index like 2 will become 4 and - 1 = 3 for second iteration , Now 3 star will get print, this is the pattern here.
+    row += "*";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 9 +++++++++++++++++++++++++
 
@@ -188,16 +197,18 @@
 //     **
 //      *
 
-// for (let i = 5; i > 0; i--) {  // Listen to your gut , try whatever there is in your head, before seeing the answer..
-//   let row = "";
-//   for (let j = 0; j < 5 - i; j++) {
-//     row += " ";
-//   }
-//   for (let p = 1; p <= 2 * i - 1; p++) {
-//     row += "*";
-//   }
-//   console.log(row);
-// }
+for (let i = 5; i > 0; i--) {
+  // Listen to your gut , try whatever there is in your head, before seeing the answer..
+  let row = "";
+  for (let j = 0; j < 5 - i; j++) {
+    row += " ";
+  }
+  for (let p = 1; p <= 2 * i - 1; p++) {
+    row += "*";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 10 +++++++++++++++++++++++++
 
@@ -225,22 +236,20 @@
 
 // OPTIMISED VERSION
 
-// const start = Date.now();
-// for (i = 1; i <= 5; i++) {
-//   let row = "";
-//   for (let j = 0; j < 5 - i; j++) {
-//     row += " ";
-//   }
-//   for (let k = 1; k <= i; k++) {
-//     row += "*";
-//     if (k < i) {
-//       row += " ";
-//     }
-//   }
-//   console.log(row);
-// }
-// const endTime = Date.now();
-// console.log("Time Taken:", endTime - start, "ms");
+for (i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 0; j < 5 - i; j++) {
+    row += " ";
+  }
+  for (let k = 1; k <= i; k++) {
+    row += "*";
+    if (k < i) {
+      row += " ";
+    }
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 11 +++++++++++++++++++++++++
 
@@ -265,20 +274,20 @@
 
 // OPTIMISED VERSION
 
-// for (i = 5; i > 0; i--) {
-//   let row = "";
-//   for (let j = 0; j < 5 - i; j++) {
-//     row += " ";
-//   }
-//   for (let k = 1; k <= i; k++) {
-//     row += "*";
-//     if (k < i) {
-//       row += " ";
-//     }
-//   }
-//   console.log(row);
-// }
-// const endTime = Date.now();
+for (i = 5; i > 0; i--) {
+  let row = "";
+  for (let j = 0; j < 5 - i; j++) {
+    row += " ";
+  }
+  for (let k = 1; k <= i; k++) {
+    row += "*";
+    if (k < i) {
+      row += " ";
+    }
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 12 +++++++++++++++++++++++++
 
@@ -293,43 +302,44 @@
 //   * * * *
 //  * * * * *
 
-// const rows = 5;
+const rows = 5;
 
-// // upper part
-// for (let i = rows; i >= 1; i--) {
-//   let row = "";
+// upper part
+for (let i = rows; i >= 1; i--) {
+  let row = "";
 
-//   // Add leading spaces
-//   for (let s = 0; s < rows - i; s++) {
-//     row += " ";
-//   }
+  // Add leading spaces
+  for (let s = 0; s < rows - i; s++) {
+    row += " ";
+  }
 
-//   // Add stars with spaces
-//   for (let j = 1; j <= i; j++) {
-//     row += "*";
-//     if (j < i) row += " ";
-//   }
+  // Add stars with spaces
+  for (let j = 1; j <= i; j++) {
+    row += "*";
+    if (j < i) row += " ";
+  }
 
-//   console.log(row);
-// }
+  console.log(row);
+}
 
-// // Lower part
-// for (let i = 1; i <= rows; i++) {
-//   let row = "";
+// Lower part
+for (let i = 1; i <= rows; i++) {
+  let row = "";
 
-//   // Add leading spaces
-//   for (let s = 0; s < rows - i; s++) {
-//     row += " ";
-//   }
+  // Add leading spaces
+  for (let s = 0; s < rows - i; s++) {
+    row += " ";
+  }
 
-//   // Add stars with spaces
-//   for (let j = 1; j <= i; j++) {
-//     row += "*";
-//     if (j < i) row += " ";
-//   }
+  // Add stars with spaces
+  for (let j = 1; j <= i; j++) {
+    row += "*";
+    if (j < i) row += " ";
+  }
 
-//   console.log(row);
-// }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 13 +++++++++++++++++++++++++ , Good pattern 1 *
 
@@ -341,30 +351,31 @@
 
 // Pattern -> Basically handle the case where there where all start first, Remaining -> only on edge print * , " " in between
 
-// for (let i = 1; i <= 5; i++) {
-//   let row = "";
+for (let i = 1; i <= 5; i++) {
+  let row = "";
 
-//   for (let j = 1; j <= 5 - i; j++) {
-//     row += " ";
-//   }
+  for (let j = 1; j <= 5 - i; j++) {
+    row += " ";
+  }
 
-//   if (i === 1) {
-//     row += "*";
-//   } else if (i === 5) {
-//     for (let k = 0; k < 2 * i - 1; k++) {
-//       row += "*";
-//     }
-//   } else {
-//     row += "*";
-//     for (let l = 0; l < 2 * i - 1 - 2; l++) {
-//       // As in each row there is 2 asteric , so the spaces equation becomes => (2 * i - 1) - 2
-//       row += " ";
-//     }
-//     row += "*";
-//   }
+  if (i === 1) {
+    row += "*";
+  } else if (i === 5) {
+    for (let k = 0; k < 2 * i - 1; k++) {
+      row += "*";
+    }
+  } else {
+    row += "*";
+    for (let l = 0; l < 2 * i - 1 - 2; l++) {
+      // As in each row there is 2 asteric , so the spaces equation becomes => (2 * i - 1) - 2
+      row += " ";
+    }
+    row += "*";
+  }
 
-//   console.log(row);
-// }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 14 +++++++++++++++++++++++++ , These were good questions Maza aya
 
@@ -374,27 +385,28 @@
 //     * *
 //      *
 
-// for (let i = 5; i > 0; i--) {
-//   let row = "";
-//   for (let j = 0; j < 5 - i; j++) {
-//     row += " ";
-//   }
+for (let i = 5; i > 0; i--) {
+  let row = "";
+  for (let j = 0; j < 5 - i; j++) {
+    row += " ";
+  }
 
-//   if (i === 5) {
-//     for (let k = 0; k < 2 * i - 1; k++) {
-//       row += "*";
-//     }
-//   } else if (i === 1) {
-//     row += "*";
-//   } else {
-//     row += "*";
-//     for (let l = 0; l < 2 * i - 3; l++) {
-//       row += " ";
-//     }
-//     row += "*";
-//   }
-//   console.log(row);
-// }
+  if (i === 5) {
+    for (let k = 0; k < 2 * i - 1; k++) {
+      row += "*";
+    }
+  } else if (i === 1) {
+    row += "*";
+  } else {
+    row += "*";
+    for (let l = 0; l < 2 * i - 3; l++) {
+      row += " ";
+    }
+    row += "*";
+  }
+  console.log(row);
+}
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 15 +++++++++++++++++++++++++ , holo Kaju katli
 
@@ -408,45 +420,47 @@
 //     * *
 //      *
 
-// // upper
-// for (let i = 1; i <= 5; i++) {
-//   let row = "";
+// upper
+for (let i = 1; i <= 5; i++) {
+  let row = "";
 
-//   for (let j = 0; j < 5 - i; j++) {
-//     row += " ";
-//   }
+  for (let j = 0; j < 5 - i; j++) {
+    row += " ";
+  }
 
-//   if (i === 1) {
-//     row += "*";
-//   } else {
-//     row += "*";
-//     for (let k = 0; k < 2 * i - 3; k++) {
-//       row += " ";
-//     }
-//     row += "*";
-//   }
-//   console.log(row);
-// }
+  if (i === 1) {
+    row += "*";
+  } else {
+    row += "*";
+    for (let k = 0; k < 2 * i - 3; k++) {
+      row += " ";
+    }
+    row += "*";
+  }
+  console.log(row);
+}
 
-// // lower
-// for (let i = 4; i > 0; i--) {
-//   let row = "";
+// lower
+for (let i = 4; i > 0; i--) {
+  let row = "";
 
-//   for (let j = 0; j < 5 - i; j++) {
-//     row += " ";
-//   }
+  for (let j = 0; j < 5 - i; j++) {
+    row += " ";
+  }
 
-//   if (i === 1) {
-//     row += "*";
-//   } else {
-//     row += "*";
-//     for (let k = 0; k < 2 * i - 3; k++) {
-//       row += " ";
-//     }
-//     row += "*";
-//   }
-//   console.log(row);
-// }
+  if (i === 1) {
+    row += "*";
+  } else {
+    row += "*";
+    for (let k = 0; k < 2 * i - 3; k++) {
+      row += " ";
+    }
+    row += "*";
+  }
+  console.log(row);
+}
+
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 16 +++++++++++++++++++++++++ (Repeat Worthy)
 // Loved this question learned something new , Pascal Triangle, I did not knew about it
@@ -457,31 +471,32 @@
 //     1   3   3   1
 //   1   4   6   4   1
 
-// function PrintPascalTriangle(n) {
-//   const Array2dTriangle = [];
+function PrintPascalTriangle(n) {
+  const Array2dTriangle = [];
 
-//   for (let i = 0; i < n; i++) {
-//     Array2dTriangle[i] = []; // creting arrays for each iteration in out main array
+  for (let i = 0; i < n; i++) {
+    Array2dTriangle[i] = []; // creting arrays for each iteration in out main array
 
-//     for (let j = 0; j <= i; j++) {
-//       if (j === 0 || j === i) {
-//         Array2dTriangle[i][j] = 1; // putting 1 to the edges of each element
-//       } else {
-//         Array2dTriangle[i][j] =
-//           Array2dTriangle[i - 1][j - 1] + Array2dTriangle[i - 1][j]; // the middle value is the some of two values direct above row , so this the formula
-//       }
-//     }
-//   }
+    for (let j = 0; j <= i; j++) {
+      if (j === 0 || j === i) {
+        Array2dTriangle[i][j] = 1; // putting 1 to the edges of each element
+      } else {
+        Array2dTriangle[i][j] =
+          Array2dTriangle[i - 1][j - 1] + Array2dTriangle[i - 1][j]; // the middle value is the some of two values direct above row , so this the formula
+      }
+    }
+  }
 
-//   // Loop to print the elements of the 2D array , As out required pattern
-//   for (let k = 0; k < n; k++) {
-//     let space = " ".repeat(n - k - 1); // .repeat -> It repeats the string n no. of times.
-//     let pattern = Array2dTriangle[k].join(" "); // -> Joining so array -> converts to strings
-//     console.log(space + pattern);
-//   }
-// }
+  // Loop to print the elements of the 2D array , As out required pattern
+  for (let k = 0; k < n; k++) {
+    let space = " ".repeat(n - k - 1); // .repeat -> It repeats the string n no. of times.
+    let pattern = Array2dTriangle[k].join(" "); // -> Joining so array -> converts to strings
+    console.log(space + pattern);
+  }
+}
 
-// PrintPascalTriangle(5);
+PrintPascalTriangle(5);
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 17 +++++++++++++++++++++++++
 
@@ -498,46 +513,47 @@
 //     212
 //      1
 
-// function filledKajuKatli(n) {
-//   // upper part
+function filledKajuKatli(n) {
+  // upper part
 
-//   for (let i = 1; i <= n; i++) {
-//     let row = "";
-//     row += " ".repeat(n - i);
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    row += " ".repeat(n - i);
 
-//     // Decrement // -> i to 1
-//     for (let j = i; j >= 1; j--) {
-//       row += j;
-//     }
+    // Decrement // -> i to 1
+    for (let j = i; j >= 1; j--) {
+      row += j;
+    }
 
-//     // Increment // -> 2 to i
-//     for (let k = 2; k <= i; k++) {
-//       row += k;
-//     }
+    // Increment // -> 2 to i
+    for (let k = 2; k <= i; k++) {
+      row += k;
+    }
 
-//     console.log(row);
-//   }
+    console.log(row);
+  }
 
-//   // lower part from n-1 to 1
+  // lower part from n-1 to 1
 
-//   for (let i = n - 1; i >= 1; i--) {
-//     let row = "";
-//     row += " ".repeat(n - i);
+  for (let i = n - 1; i >= 1; i--) {
+    let row = "";
+    row += " ".repeat(n - i);
 
-//     // Decrement // -> i to 1
-//     for (let j = i; j >= 1; j--) {
-//       row += j;
-//     }
+    // Decrement // -> i to 1
+    for (let j = i; j >= 1; j--) {
+      row += j;
+    }
 
-//     // Increment // -> 2 to i
-//     for (let k = 2; k <= i; k++) {
-//       row += k;
-//     }
-//     console.log(row);
-//   }
-// }
+    // Increment // -> 2 to i
+    for (let k = 2; k <= i; k++) {
+      row += k;
+    }
+    console.log(row);
+  }
+}
 
-// filledKajuKatli(4);
+filledKajuKatli(4);
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 18 +++++++++++++++++++++++++
 
@@ -552,21 +568,22 @@
 //   ****  ****
 //   **********
 
-// function kajuKatliMold(n) {
-//   for (let i = 1; i <= n; i++) {
-//     let stars = "*".repeat(n - i + 1);
-//     let spaces = " ".repeat(2 * i - 2); // the pattern i notice is the gap is basically 2 table but one step forward so gotta remove -2
-//     console.log(stars + spaces + stars);
-//   }
+function kajuKatliMold(n) {
+  for (let i = 1; i <= n; i++) {
+    let stars = "*".repeat(n - i + 1);
+    let spaces = " ".repeat(2 * i - 2); // the pattern i notice is the gap is basically 2 table but one step forward so gotta remove -2
+    console.log(stars + spaces + stars);
+  }
 
-//   for (let i = n; i > 0; i--) {
-//     let stars = "*".repeat(n - i + 1);
-//     let spaces = " ".repeat(2 * i - 2);
-//     console.log(stars + spaces + stars);
-//   }
-// }
+  for (let i = n; i > 0; i--) {
+    let stars = "*".repeat(n - i + 1);
+    let spaces = " ".repeat(2 * i - 2);
+    console.log(stars + spaces + stars);
+  }
+}
 
-// kajuKatliMold(5);
+kajuKatliMold(5);
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 19 +++++++++++++++++++++++++
 
@@ -580,21 +597,22 @@
 //    **      **
 //    *        *
 
-// function butterfly(n) {
-//   for (let i = n; i > 1; i--) {
-//     let star = "*".repeat(n - i + 1);
-//     let space = " ".repeat(2 * i - 2);
-//     console.log(star + space + star);
-//   }
+function butterfly(n) {
+  for (let i = n; i > 1; i--) {
+    let star = "*".repeat(n - i + 1);
+    let space = " ".repeat(2 * i - 2);
+    console.log(star + space + star);
+  }
 
-//   for (let i = 1; i <= n; i++) {
-//     let star = "*".repeat(n - i + 1);
-//     let space = " ".repeat(2 * i - 2);
-//     console.log(star + space + star);
-//   }
-// }
+  for (let i = 1; i <= n; i++) {
+    let star = "*".repeat(n - i + 1);
+    let space = " ".repeat(2 * i - 2);
+    console.log(star + space + star);
+  }
+}
 
-// butterfly(5);
+butterfly(5);
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 20 +++++++++++++++++++++++++ (Worth repeating)
 
@@ -604,23 +622,24 @@
 //    *  *
 //    ****
 
-// function standupRectangle(n) {
-//   for (let i = 1; i <= n; i++) {
-//     let row = "";
+function standupRectangle(n) {
+  for (let i = 1; i <= n; i++) {
+    let row = "";
 
-//     for (let j = 0; j < n - 1; j++) {
-//       // this is better i was ealier handling the first and last case outside of this innner loop , via a conditional,  now we testing for that condition in the loop itself. i === 1 || i === n .
-//       if (i === 1 || i === n || (j === 0) | (j === n - 1 - 1)) {
-//         row += "*";
-//       } else {
-//         row += " ";
-//       }
-//     }
-//     console.log(row);
-//   }
-// }
+    for (let j = 0; j < n - 1; j++) {
+      // this is better i was ealier handling the first and last case outside of this innner loop , via a conditional,  now we testing for that condition in the loop itself. i === 1 || i === n .
+      if (i === 1 || i === n || (j === 0) | (j === n - 1 - 1)) {
+        row += "*";
+      } else {
+        row += " ";
+      }
+    }
+    console.log(row);
+  }
+}
 
-// standupRectangle(5);
+standupRectangle(5);
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 21 +++++++++++++++++++++++++
 
@@ -646,6 +665,7 @@ function printNumberTriangle(n) {
 }
 
 printNumberTriangle(5);
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 22 +++++++++++++++++++++++++ , Worthy retry
 
@@ -670,12 +690,9 @@ function binaryRightTriangle(n) {
 }
 
 binaryRightTriangle(5);
+console.log();
 
 // +++++++++++++++++++++++++ PATTERN 23 +++++++++++++++++++++++++
-
-// +++++++++++++++++++++++++ PATTERN 24 +++++++++++++++++++++++++
-
-// +++++++++++++++++++++++++ PATTERN 25 +++++++++++++++++++++++++
 
 // 1 1 1 1 1 1
 // 2 2 2 2 2
@@ -697,8 +714,9 @@ for (let i = 6; i >= 1; i--) {
   }
   console.log(row);
 }
+console.log();
 
-// +++++++++++++++++++++++++ PATTERN 26 +++++++++++++++++++++++++
+// +++++++++++++++++++++++++ PATTERN 24 +++++++++++++++++++++++++
 
 //      *
 //     * *
@@ -747,8 +765,9 @@ function diamond(n) {
 }
 
 diamond(5);
+console.log();
 
-// +++++++++++++++++++++++++ PATTERN 27 +++++++++++++++++++++++++
+// +++++++++++++++++++++++++ PATTERN 25 +++++++++++++++++++++++++
 
 //  *        *
 //  **      **
@@ -775,8 +794,9 @@ function starWarShip(n) {
 }
 
 starWarShip(5);
+console.log();
 
-// +++++++++++++++++++++++++ PATTERN 28 +++++++++++++++++++++++++
+// +++++++++++++++++++++++++ PATTERN 26 +++++++++++++++++++++++++
 //         1
 //       2 1 2
 //     3 2 1 2 3
@@ -804,3 +824,197 @@ function numberPyramid(n) {
 }
 
 numberPyramid(5);
+console.log();
+
+// +++++++++++++++++++++++++ PATTERN 27 +++++++++++++++++++++++++  , Worth repeating **
+
+// pattern -> Need to find the min distance from the edge for the each cell, then n - min
+
+//  4 4 4 4 4 4 4
+//  4 3 3 3 3 3 4
+//  4 3 2 2 2 3 4
+//  4 3 2 1 2 3 4
+//  4 3 2 2 2 3 4
+//  4 3 3 3 3 3 4
+//  4 4 4 4 4 4 4
+
+function tesseract(n) {
+  let total = n * 2 - 1;
+  for (let i = 1; i <= total; i++) {
+    let row = "";
+
+    for (let j = 1; j <= total; j++) {
+      // Min distance from the edge for each cell
+      let top = i - 1;
+      let bottom = total - i;
+      let left = j - 1;
+      let right = total - j;
+      let min = Math.min(top, bottom, left, right);
+
+      row += n - min + " ";
+    }
+    console.log(row);
+  }
+}
+
+tesseract(4);
+console.log();
+
+// +++++++++++++++++++++++++ PATTERN 28 +++++++++++++++++++++++++
+
+//  E
+//  D E
+//  C D E
+//  B C D E
+//  A B C D E
+
+const alphabets = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
+
+function alphabetRightAngle(n) {
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = i; j >= 1; j--) {
+      row += alphabets[n - j].toUpperCase() + " ";
+    }
+    console.log(row);
+  }
+}
+
+alphabetRightAngle(5);
+console.log();
+
+// +++++++++++++++++++++++++ PATTERN 29 +++++++++++++++++++++++++
+
+// pattern -> after each inner iteration the index increases and for the next iteration starts from the last updated index, Similar pattern we saw in , Pattern 21
+
+//  a
+//  B c
+//  D e F
+//  g H i J
+//  k L m N o
+
+function alphabetRightAngleAlt(n) {
+  let index = 0;
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = 0; j < i; j++) {
+      row +=
+        index % 2 === 0
+          ? alphabets[index] + " "
+          : alphabets[index].toUpperCase() + " ";
+      index++;
+    }
+    console.log(row);
+  }
+}
+
+alphabetRightAngleAlt(5);
+console.log();
+
+// +++++++++++++++++++++++++ PATTERN 30 +++++++++++++++++++++++++
+
+//  E D C B A
+//  D C B A
+//  C B A
+//  B A
+//  A
+
+function alphabetRightAngleDecline(n) {
+  for (let i = 5; i >= 1; i--) {
+    let row = "";
+    for (let j = i; j >= 1; j--) {
+      row += alphabets[j - 1].toUpperCase() + " ";
+    }
+    console.log(row);
+  }
+}
+
+alphabetRightAngleDecline(5);
+console.log();
+
+// +++++++++++++++++++++++++ PATTERN 31 +++++++++++++++++++++++++
+// Pattern -> increment , decrement
+
+//  1      1
+//  12    21
+//  123  321
+//  12344321
+
+function unknownn(n) {
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+
+    // increment
+    for (let j = 1; j <= i; j++) {
+      row += j;
+    }
+
+    // spaces
+    for (let k = 1; k <= (n - i) * 2; k++) {
+      row += " ";
+    }
+
+    // decrease
+    for (let l = i; l >= 1; l--) {
+      row += l;
+    }
+
+    console.log(row);
+  }
+}
+
+unknownn(4);
+console.log();
+
+// +++++++++++++++++++++++++ PATTERN 32 +++++++++++++++++++++++++
+
+//     ****
+//    *  *
+//   *  *
+//  *  *
+// ****
+
+function invertedStandRectangle(n) {
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    row += " ".repeat(n - i);
+    for (let j = 1; j <= n - 1; j++) {
+      if (i === 1 || i === n || j === 1 || j === n - 1) {
+        row += "*";
+      } else {
+        row += " ";
+      }
+    }
+    console.log(row);
+  }
+}
+invertedStandRectangle(5);
+
+console.log();
